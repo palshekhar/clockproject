@@ -1,12 +1,12 @@
 function Detail() {
-   var date="26/10/2023"
-   var time="10:28:17 AM"
+   var date=new Date();
+  //  var time=new Date()
    
    return (
-     <div id="detail">
-        <div id="time">{time}</div>
-        <div id="date">{date}</div>
-      </div>
+     <div class="details">
+        <div id="time">{date.toLocaleTimeString()}</div>
+        <div id="date">{date.toDateString()}</div>
+     </div>
    )
 
 }
